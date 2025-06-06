@@ -7,15 +7,16 @@ import search from "../../assets/image/search.png";
 import cart from "../../assets/image/cart2.png";
 import menu from "../../assets/image/menu-icon.png";
 import flag from "../../assets/image/flag.jpg";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <section>
       <div className="header-container">
         <nav>
-          <a href="">
+          <Link to="/">
             <img src={logo} width="50" alt="" />
-          </a>
+          </Link>
           <div className="nav-country">
             <img src={icon} height="20" alt="" />
             <div>
@@ -46,15 +47,15 @@ const Header = () => {
               <img src={drop_down} width="8px" alt="" />
             </h1>
           </div>
-          <a href="" className="nav-text">
+          <Link to="/Orders" className="nav-text">
             <p>Return</p>
             <h1>&Orders</h1>
-          </a>
-          <a href="" className="nav-cart">
+          </Link>
+          <Link to="/Cart" className="nav-cart">
             <img src={cart} width="20" alt="" />
             <h4>Cart</h4>
             <span>0</span>
-          </a>
+          </Link>
         </nav>
       </div>
       <div className="nav-bottom">
